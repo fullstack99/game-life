@@ -1,0 +1,8 @@
+<div class="buttonGroup">
+  <button [disabled]="isRunning" (click)="start()" class="btn btn-primary">
+    Start <i class="fas fa-play"></i>
+  </button>
+  <button [disabled]="!isRunning" (click)="stop()">Pause <i class="fas fa-pause"></i></button>
+  <button (click)="reset()">Stop <i class="fas fa-stop"></i></button>
+</div>
+<p>Generation {{this.getGenerationCount()}}</p>
